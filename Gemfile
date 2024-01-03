@@ -41,6 +41,9 @@ gem 'devise', '~> 4.9', '>= 4.9.3'
 # Doorkeeper is a gem (Rails engine) that makes it easy to introduce OAuth 2 provider functionality to your Ruby on Rails or Grape application. [https://github.com/doorkeeper-gem/doorkeeper]
 gem 'doorkeeper', '~> 5.5', '>= 5.5.4'
 
+# A plugin for versioning Rails based RESTful APIs. [https://github.com/bploetz/versionist]
+gem 'versionist', '~> 1.7', '>= 1.7.0'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]

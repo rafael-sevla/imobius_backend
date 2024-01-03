@@ -9,4 +9,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  namespace :admin do
+    api_version module: 'V1', path: { value: 'v1' }, defaults: { format: :json } do
+      resources :customers, only: :index
+
+    end
+  end
+
+
 end

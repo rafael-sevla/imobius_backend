@@ -27,3 +27,10 @@ Doorkeeper::Application.find_or_create_by(name: "Admin") do | app |
   app.scopes = "admin"
   app.save!
 end
+
+Customer.find_or_create_by!(document: '11122233344') do |customer|
+  customer.name = 'Customer 1'
+  customer.phone = '11999999999'
+  customer.birth_date = '1990-01-01'
+  customer.save!
+end
